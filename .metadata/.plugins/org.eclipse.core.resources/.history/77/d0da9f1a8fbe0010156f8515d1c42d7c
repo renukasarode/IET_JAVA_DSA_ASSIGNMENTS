@@ -1,0 +1,51 @@
+package com.demo.stack_test;
+
+import com.demo.stack.MyStackArray;
+
+public class MyStackTest {
+
+	public static void main(String[] args) {
+      MyStackArray obj = new MyStackArray(5);
+     
+      if( obj.push(1))
+      {
+    	   System.out.println("added successfullly");
+      }
+      else
+      {
+    	  System.out.println("not added");
+      }
+      if( obj.push(2))
+      {
+    	   System.out.println("added successfullly");
+      }
+      else
+      {
+    	  System.out.println("not added");
+      }
+      if( obj.push(3))
+      {
+    	   System.out.println("added successfullly");
+      }
+      else
+      {
+    	  System.out.println("not added");
+      }
+      if( obj.push(4))
+      {
+    	   System.out.println("added successfullly");
+      }
+      else
+      {
+    	  System.out.println("not added");
+      }
+      System.out.println(obj.pop());
+      System.out.println(obj.pop());
+      System.out.println(obj.pop());
+      System.out.println(obj.pop());
+      
+      
+      
+	}
+
+}

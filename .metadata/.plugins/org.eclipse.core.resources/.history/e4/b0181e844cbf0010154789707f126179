@@ -1,0 +1,25 @@
+package com.demo.stack_test;
+
+import com.demo.stack.MyStackList;
+
+public class MyStackListTest {
+
+	public static void main(String[] args) {
+		MyStackList list = new MyStackList();
+		list.push(12);
+		list.push(111);
+		list.push(121);
+		list.push(1212);
+		list.display();
+		list.pop();
+		list.pop();
+		list.pop();
+		list.pop();
+		list.pop();
+		list.pop();
+		
+		
+        
+	}
+
+}

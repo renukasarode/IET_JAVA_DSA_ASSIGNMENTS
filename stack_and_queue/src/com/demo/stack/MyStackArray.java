@@ -1,0 +1,53 @@
+package com.demo.stack;
+
+import java.util.Arrays;
+
+public class MyStackArray {
+	private int [] arr;
+	private int top;
+	public MyStackArray() {
+		arr = new int[10];
+		top  = -1;
+	}
+	public MyStackArray(int size) {
+		arr = new int[size];
+		top  = -1;
+	}
+	
+	
+	
+	@Override
+	public String toString() {
+		return "MyStackArray [arr=" + Arrays.toString(arr) + "]";
+	}
+	public boolean isFull()
+	{
+		return top ==arr.length-1;
+	}
+	public boolean isEmpty()
+	{
+		return top==-1;
+	}
+	public boolean push(int value)
+	{
+		if(!isFull())
+		{
+			arr[++top] = value;
+			System.out.println("pushed------>"+value);
+			return true;
+		}
+		System.out.println("stack is fulll");
+		return false;
+	}
+	public int pop()
+	{
+		if(!isEmpty())
+		{
+			System.out.println("is popped");
+			arr[top]=0;
+			return arr[top--];
+		}
+		System.out.println("stack is empty");
+		return -1;
+	}	
+}

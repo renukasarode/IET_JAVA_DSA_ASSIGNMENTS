@@ -1,0 +1,13 @@
+package com.demo.stack;
+
+public class MyCircularQueue {
+int arr [];
+int front ;
+int rear;
+public MyCircularQueue() {
+	super();
+	arr  = new int[10];
+	this.front = -1;
+	this.rear = -1;
+}
+}

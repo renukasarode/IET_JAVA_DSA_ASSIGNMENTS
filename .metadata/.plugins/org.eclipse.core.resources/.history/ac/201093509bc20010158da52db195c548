@@ -1,0 +1,21 @@
+package com.demo.test;
+
+import com.demo.linkedlist.LinkedList;
+
+public class TestLinkedList {
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+		
+		list.addNode(23);
+		list.addNode(24);
+		list.addNode(21);
+		list.addNode(93);
+		
+		list.deleteByPos(2);
+	//	list.addByPosition(5, 1);
+		
+	//	list.addByVal(23, 1);
+		
+		list.display();
+	}
+}

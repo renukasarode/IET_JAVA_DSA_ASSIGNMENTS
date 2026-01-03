@@ -1,0 +1,18 @@
+package com.demo.Test;
+
+import com.demo.linkedList.DoublyCircularLinkedList;
+
+public class DoublyCircularLinkedListTest {
+
+	public static void main(String[] args) {
+		DoublyCircularLinkedList obj1 = new DoublyCircularLinkedList();
+		obj1.addNode(11);
+		obj1.addNode(12);
+		obj1.addNode(13);
+		
+//		obj1.addByvalue(11, 121);
+//	obj1.addByPosition(5, 1);
+		obj1.display();
+	}
+
+}

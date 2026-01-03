@@ -1,0 +1,36 @@
+package com.demo.ArraysTest;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+import com.demo.arrays.ArraysOperation;
+import com.demo.arrays.My2DArray;
+
+public class Test2DArray {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int i,j;
+		 System.out.println("enter the rows 2D array");
+		 i = sc.nextInt();
+		 System.out.println("enter the columns 2D array");
+		 j = sc.nextInt();
+		 int arr[][] = new int[i][j];
+		 
+		 My2DArray.accpet2DArray(arr);
+		 My2DArray.displayArray(arr);
+		 System.out.println("reverse of array rows---------");
+		 My2DArray.displayArray(My2DArray.reverseArray(arr)); 
+		 System.out.println("Finding maximum element in the array");
+		  System.out.println(Arrays.toString(My2DArray.findMaxElement(arr)));
+		  int[] ans= findRowAverage(arr);
+//		  My2DArray(arr);
+		 
+		  
+		  
+		  				
+
+	}
+
+}

@@ -1,0 +1,62 @@
+package com.demo.stack;
+
+public class MyQueueList {
+Node front;
+Node rear;
+class Node {
+	Node next;
+	int data;
+	public Node(int data) {
+		super();
+		this.data = data;
+		this.next = null;
+	}
+	
+}
+public MyQueueList()
+{
+	front =null;
+	rear = null;
+}
+public boolean isEmpty()
+{
+	return front==null && rear==null;
+}
+public boolean enqueue(int val)
+{
+	Node newNode = new Node(val);
+	if(rear!=null && front!=null)
+	{
+	    rear.next=newNode;
+	     rear  = newNode;
+	}
+	rear= newNode;
+		System.out.println("added");
+		return true;
+}
+public int dequeue()
+{
+	if(rear!=null)
+	{
+		int val = front.data;
+		front = front.next;
+		System.out.println(val + " deleted successfully");
+		return val;
+	}
+	System.out.println("not deleted cause it empty");
+	return -1;
+}
+public void displayElements()
+{
+	Node temp = rear;
+	while(temp!=null)
+	{
+		System.out.print(temp.data + "-->");
+		temp = temp.next;
+		
+	}
+	System.out.println();
+}
+
+	
+}

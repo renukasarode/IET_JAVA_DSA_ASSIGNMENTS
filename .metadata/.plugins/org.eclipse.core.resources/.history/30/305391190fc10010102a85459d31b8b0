@@ -1,0 +1,10 @@
+package com.demo.ArraysTest;
+
+public class Test2DArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

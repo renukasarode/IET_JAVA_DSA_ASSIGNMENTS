@@ -1,0 +1,53 @@
+package com.demo.stack;
+
+public class MyStackList {
+	Node top;
+	class Node{
+	private	Node next;
+	private	int data;
+	
+	public Node(int data) {
+		super();
+		this.data = data;
+		this.next = null;
+	}
+	}
+
+	public MyStackList() {
+		super();
+		top  = null;
+	}
+	public boolean isEmpty()
+	{
+		return top==null;
+	}
+	public void push(int value)
+	{
+		Node newNode = new Node(value);
+		newNode.next = top;
+		top = newNode;
+		System.out.println(top.data+" Added successfully");
+	}
+	public int pop()
+	{
+		if(!isEmpty())
+		{
+			
+			 int value = top.data;
+			 top = top.next;
+			 return value;
+		}
+		return -1;
+	}
+	public void display()
+	{
+		Node temp=top;
+		while(temp!=null)
+		{
+		  System.out.print(temp.data+" --->");
+		  temp=temp.next;
+		}
+		System.out.println();
+	}
+	
+  }

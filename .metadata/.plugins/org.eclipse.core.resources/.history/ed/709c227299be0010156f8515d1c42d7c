@@ -1,0 +1,33 @@
+package com.demo.stack_test;
+
+import com.demo.stack.MyStackList;
+
+public class MyStackListTest {
+
+	public static void main(String[] args) {
+		MyStackList list = new MyStackList();
+		list.push(12);
+		list.push(111);
+		list.push(121);
+		list.push(1212);
+		if(list.pop()!=-1)
+		{
+		  System.out.println(list.pop()+" deleted successfully");
+		}
+		else
+		{
+			System.out.println(list.pop()+"not deleted");
+		}
+		if(list.pop()!=-1)
+		{
+			System.out.println("in hell");
+		  System.out.println(list.pop()+" deleted successfully");
+		}
+		else
+		{
+			System.out.println(list.pop()+"not deleted");
+		}
+        
+	}
+
+}

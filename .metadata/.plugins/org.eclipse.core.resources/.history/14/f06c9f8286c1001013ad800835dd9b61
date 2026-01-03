@@ -1,0 +1,123 @@
+package com.demo.arrays;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ArraysOperation {
+
+	public static void acceptElement(int[] arr) {
+		Scanner sc = new Scanner(System.in);
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println("Enter the elemet of "+i);
+		   arr[i]= sc.nextInt();
+		}
+	}
+
+	public static void displayArray(int[] arr) {
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+
+	public static int sumofArray(int[] arr) {
+		int sum = 0;
+		for(int i=0;i<arr.length;i++)
+		{
+			sum+=arr[i];
+		}
+		return sum;
+	}
+
+
+	public static void factofPrime(int[] arr) {
+		for(int i=0;i<arr.length;i++)
+		{
+			if(isPrime(arr[i]))
+			{
+				System.out.println(arr[i]);
+				int fact =1;
+				for(int j=1;j<=arr[i];j++)
+				{
+					fact*=j;
+				}
+				System.out.println("factorial of " +arr[i]+" is "+fact);
+			}
+		}
+		
+	}
+	private static boolean isPrime(int num) {
+		int i;
+		for(i=2;i<=num/2;i++)
+		{
+			if(num%i==0)
+				return false;
+		}
+		if(i>num/2 && num!=1)
+			return true;
+		return false;
+	}
+
+	public static int maxOfPrime(int[] arr) {			
+		int max = Integer.MIN_VALUE;
+		for(int i=0;i<arr.length;i++)
+		{
+			if(isPrime(arr[i]))
+			{
+				if(arr[i]>max)
+				{
+					max = arr[i];
+				}
+			}
+		}
+		return max;
+	}
+
+	public static int[] copyArray(int[] arr) {
+		int copyArr[] = new int[arr.length];
+		for(int i=0;i<arr.length;i++)
+		{
+			if(isPrime(arr[i]) && arr[i]<=5)
+			copyArr[i] = arr[i];
+			else
+			{
+			   
+			   copyArr[i] = reverse(arr[i]);
+			}
+		}
+		return copyArr;
+	}
+                               
+	private static int reverse(int num) {
+		int reverse =0;
+		for(int i=num;i>0;i/=10)
+		{
+			int rem=i%10;
+			reverse= reverse*10+rem;
+		}
+		return reverse;
+	}
+
+	public static String[] convertIntoArray(String[] arr) {
+		String newArr[] = new String[arr.length];
+		int k=0;
+		for(int j=0;j<arr.length;j++)
+		{
+		for(int i=j+1;i<arr.length;i++)
+		{
+			if(arr[j].charAt(1)==arr[i].charAt(1))
+			{
+             newArr[++k] = arr[i];	
+             arr[i]=null;
+			}
+			newArr[j] = arr[i];
+		}
+		}
+		return newArr;
+	}
+}
+
+

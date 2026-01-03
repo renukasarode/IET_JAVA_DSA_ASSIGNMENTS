@@ -1,0 +1,18 @@
+package com.demo.stack_test;
+
+import com.demo.stack.MyCircularQueue;
+
+public class MyCircularQueueTest {
+
+	public static void main(String[] args) {
+		 MyCircularQueue obj = new  MyCircularQueue();
+		 obj.enqueue(2);
+		 //obj.diplay();
+		 obj.enqueue(3);
+		 obj.dequeue();
+		 obj.dequeue();
+		 
+		 
+	}
+
+}

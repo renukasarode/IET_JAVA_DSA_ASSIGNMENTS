@@ -1,0 +1,59 @@
+package com.demo.stack;
+
+public class MyCircularQueue {
+int arr [];
+int front ;
+int rear;
+public MyCircularQueue() {
+	super();
+	arr  = new int[10];
+	this.front = -1;
+	this.rear = -1;
+}
+public MyCircularQueue(int size) {
+	super();
+	arr  = new int[size];
+	this.front = -1;
+	this.rear = -1;
+}
+public boolean isFull()
+{
+	if(front ==0 && rear==arr.length-1)
+		return true;
+	else if(front==rear +1)
+	{
+		return true;
+	}
+	else
+		return false;
+}
+public boolean isEmpty() {
+	return front==-1 ;
+}
+
+public boolean enqueue(int value)
+{
+	if(!isFull())
+	{
+		if(front==-1)
+		{	
+			front =0;
+		}
+		front = front+1%arr.length;
+		arr[front] = value;
+		System.out.println("added");
+		return true;
+	}
+	System.out.println("not added");
+	return false;
+}
+
+public boolean dequeue()
+{
+	if(!isEmpty())
+	{
+	  
+	}
+	}
+
+}

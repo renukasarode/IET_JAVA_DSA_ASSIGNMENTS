@@ -1,0 +1,20 @@
+package com.demo.stack_test;
+
+import com.demo.stack.MyQueueList;
+
+public class MyQueueListTest {
+
+	public static void main(String[] args) {
+		MyQueueList obj = new MyQueueList();
+		obj.enqueue(1);
+		obj.displayElements();
+		obj.enqueue(2);
+		obj.displayElements();
+		obj.dequeue();
+		obj.displayElements();
+		
+		
+		
+	}
+
+}

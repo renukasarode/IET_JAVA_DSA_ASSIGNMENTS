@@ -1,0 +1,14 @@
+package com.demo.stack_test;
+
+import com.demo.stack.MyStackList;
+
+public class MyStackListTest {
+
+	public static void main(String[] args) {
+		MyStackList list = new MyStackList();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="myarray.MyArray"/>
+    <fullyQualifiedTypeName name="myarray2d.My2DArray"/>
+    <fullyQualifiedTypeName name="com.demo.sorting.Sorting"/>
+    <fullyQualifiedTypeName name="com.demo.sort_test.InsersionSortingTest"/>
+    <fullyQualifiedTypeName name="com.demo.sorting.InsertionSorting"/>
+    <fullyQualifiedTypeName name="com.demo.sorting.QuickSorting"/>
+    <fullyQualifiedTypeName name="com.demo.sorting.MergeSorting"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.SinglyLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.Test.DoublyLinkedListTest"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.DoublyLinkedList.Node"/>
+    <fullyQualifiedTypeName name="com.demo.Test.SinglyCircularTest"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.SinglyCircularLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.DoublyLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.DoublyCircularLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.stack_test.MyStackTest"/>
+    <fullyQualifiedTypeName name="com.demo.stack.MyStackArray"/>
+    <fullyQualifiedTypeName name="com.demo.stack_test.MyStackList"/>
+    <fullyQualifiedTypeName name="com.demo.stack.MyStackList"/>
+    <fullyQualifiedTypeName name="com.demo.stack_test.MyQueueListTest"/>
+    <fullyQualifiedTypeName name="com.demo.stack.MyQueueList"/>
+    <fullyQualifiedTypeName name="com.demo.stack.MyCircularQueue"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.demo.arrays.ArraysOperation"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.demo.arrays.My2DArray"/>
+    <fullyQualifiedTypeName name="com.demo.searching.Searching"/>
+    <fullyQualifiedTypeName name="com.demo.linkedlist.LinkedList"/>
+</qualifiedTypeNameHistroy>
